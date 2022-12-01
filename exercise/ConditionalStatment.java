@@ -83,15 +83,16 @@ public class ConditionalStatment {
 		 * 
 		 */
 
-		System.out.println(" \n Ans Q# 4\n");
+		System.out.println(" \n Ans Q# 5\n");
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("please Enter the assesment result number :");
 
 		int val = sc.nextInt();
 		sc.close();
-
-		if (val >= 90 && val <= 100) {
+		if (val > 100 || val < 0) {
+			System.out.println(" out of bound ");
+		} else if (val >= 90 && val <= 100) {
 			System.out.println("A");
 		} else if (val >= 80) {
 			System.out.println("B");
@@ -101,9 +102,8 @@ public class ConditionalStatment {
 			System.out.println("D");
 		} else {
 			System.out.println("F");
-		}
 
-		
+		}
 
 	}
 
